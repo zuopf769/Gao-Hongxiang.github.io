@@ -16,25 +16,24 @@
   <meta name="author" content="高红翔">
   <meta name="keywords" content="">
   
-    <meta name="description" content="for…of 循环和 for…in 循环区别for…of 循环概念一个数据结构只要部署了Symbol.iterator属性，就被视为具有 iterator 接口，就可以用for...of循环遍历它的成员。也就是说，for...of循环内部调用的是数据结构的Symbol.iterator方法。 for...of循环可以使用的范围包括数组、Set 和 Map 结构、某些类似数组的对象（比如argume">
+    <meta name="description" content="工程已经升级到了 umi4（需要安装pnpm, 然后 pnpm install），下面罗列了一些变动须知： 1、关于包管理器 换成了 pnpm  理由 和 npm 使用方式一致  2、关于 @umijs&#x2F;max umi 和 @umijs&#x2F;max 都是 umi，只不过 @umijs&#x2F;max 带业务需要的插件，所以需要使用 @umijs&#x2F;max  3、关于路由">
 <meta property="og:type" content="article">
-<meta property="og:title" content="for...of循环和for...in循环区别">
-<meta property="og:url" content="http://example.com/2022/07/09/for...of%E5%BE%AA%E7%8E%AF%E5%92%8Cfor...in%E5%BE%AA%E7%8E%AF%E5%8C%BA%E5%88%AB/index.html">
+<meta property="og:title" content="umi4升级">
+<meta property="og:url" content="http://example.com/2022/08/09/%E5%8D%87%E7%BA%A7umi4/index.html">
 <meta property="og:site_name" content="title">
-<meta property="og:description" content="for…of 循环和 for…in 循环区别for…of 循环概念一个数据结构只要部署了Symbol.iterator属性，就被视为具有 iterator 接口，就可以用for...of循环遍历它的成员。也就是说，for...of循环内部调用的是数据结构的Symbol.iterator方法。 for...of循环可以使用的范围包括数组、Set 和 Map 结构、某些类似数组的对象（比如argume">
+<meta property="og:description" content="工程已经升级到了 umi4（需要安装pnpm, 然后 pnpm install），下面罗列了一些变动须知： 1、关于包管理器 换成了 pnpm  理由 和 npm 使用方式一致  2、关于 @umijs&#x2F;max umi 和 @umijs&#x2F;max 都是 umi，只不过 @umijs&#x2F;max 带业务需要的插件，所以需要使用 @umijs&#x2F;max  3、关于路由">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-07-09T14:30:00.000Z">
+<meta property="article:published_time" content="2022-08-09T18:00:00.000Z">
 <meta property="article:modified_time" content="2022-08-09T10:12:46.588Z">
 <meta property="article:author" content="高红翔">
-<meta property="article:tag" content="面试">
-<meta property="article:tag" content="es6">
+<meta property="article:tag" content="umi">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>for...of循环和for...in循环区别 - title</title>
+  <title>umi4升级 - title</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -251,7 +250,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="for...of循环和for...in循环区别"></span>
+            <span id="subtitle" data-typed-text="umi4升级"></span>
           
         </div>
 
@@ -267,8 +266,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-07-09 14:30" pubdate>
-          2022年7月9日 下午
+        <time datetime="2022-08-09 18:00" pubdate>
+          2022年8月9日 晚上
         </time>
       </span>
     
@@ -279,7 +278,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.5k 字
+          470 字
         
       </span>
     
@@ -290,7 +289,7 @@
         
         
         
-          13 分钟
+          4 分钟
         
       </span>
     
@@ -336,40 +335,32 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">for...of循环和for...in循环区别</h1>
+            <h1 style="display: none">umi4升级</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="for…of-循环和-for…in-循环区别"><a href="#for…of-循环和-for…in-循环区别" class="headerlink" title="for…of 循环和 for…in 循环区别"></a>for…of 循环和 for…in 循环区别</h1><h3 id="for…of-循环"><a href="#for…of-循环" class="headerlink" title="for…of 循环"></a>for…of 循环</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><p>一个数据结构只要部署了<code>Symbol.iterator</code>属性，就被视为具有 iterator 接口，就可以用<code>for...of</code>循环遍历它的成员。也就是说，<code>for...of</code>循环内部调用的是数据结构的<code>Symbol.iterator</code>方法。</p>
-<p><code>for...of</code>循环可以使用的范围包括数组、Set 和 Map 结构、某些类似数组的对象（比如<code>arguments</code>对象、<code>DOM NodeList</code> 对象、Generator 对象，以及字符串。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> arr = [<span class="hljs-string">&quot;red&quot;</span>, <span class="hljs-string">&quot;green&quot;</span>, <span class="hljs-string">&quot;blue&quot;</span>]<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(arr) <span class="hljs-comment">// 原型链上  Symbol(Symbol.iterator): ƒ values()</span><br></code></pre></td></tr></table></figure>
-
-<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p><code>for...of</code>循环调用遍历器接口，数组的遍历器接口只返回具有数字索引的属性。这一点跟<code>for...in</code>循环也不一样。</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs awk">let arr = [<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>];<br>arr.foo = <span class="hljs-string">&#x27;hello&#x27;</span>;<br><br><span class="hljs-keyword">for</span> (let i <span class="hljs-keyword">in</span> arr) &#123;<br>  console.log(i); <span class="hljs-regexp">//</span> <span class="hljs-string">&quot;0&quot;</span>, <span class="hljs-string">&quot;1&quot;</span>, <span class="hljs-string">&quot;2&quot;</span>, <span class="hljs-string">&quot;foo&quot;</span><br>&#125;<br><br><span class="hljs-keyword">for</span> (let i of arr) &#123;<br>  console.log(i); <span class="hljs-regexp">//</span>  <span class="hljs-string">&quot;3&quot;</span>, <span class="hljs-string">&quot;5&quot;</span>, <span class="hljs-string">&quot;7&quot;</span><br>&#125;<br></code></pre></td></tr></table></figure>
-
-<h3 id="for…in-循环"><a href="#for…in-循环" class="headerlink" title="for…in 循环"></a>for…in 循环</h3><h4 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h4><p><code>for...in</code> 语句以任意顺序迭代对象的可枚举属性，会遍历手动添加的其他键，甚至包括原型链上的键，只能获得对象的键名，不能直接获取键，为遍历对象而设计。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-title class_">Object</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">objCustom</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) &#123;&#125;<br><span class="hljs-title class_">Array</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">arrCustom</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) &#123;&#125;<br><br><span class="hljs-keyword">let</span> iterable = [<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>]<br>iterable.<span class="hljs-property">foo</span> = <span class="hljs-string">&quot;hello&quot;</span><br><br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i <span class="hljs-keyword">in</span> iterable) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(i) <span class="hljs-comment">// &quot;0&quot;、&quot;1&quot;、&quot;2&quot;, &quot;foo&quot;, &quot;arrCustom&quot;, &quot;objCustom&quot;</span><br>&#125;<br></code></pre></td></tr></table></figure>
-
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p><code>for...in</code>循环有几个缺点。</p>
-<ul>
-<li>数组的键名是数字，但是<code>for...in</code>循环是以字符串作为键名“0”、“1”、“2”等等。</li>
-<li><code>for...in</code>循环不仅遍历数字键名，还会遍历手动添加的其他键，甚至包括原型链上的键。</li>
-<li>某些情况下，<code>for...in</code>循环会以任意顺序遍历键名。</li>
-</ul>
-<p>总之，<code>for...in</code>循环主要是为遍历对象而设计的，不适用于遍历数组。</p>
-<p><code>for...of</code>循环相比上面几种做法，有一些显著的优点。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> value <span class="hljs-keyword">of</span> myArray) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(value)<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<ul>
-<li>有着同<code>for...in</code>一样的简洁语法，但是没有<code>for...in</code>那些缺点。</li>
-<li>不同于<code>forEach</code>方法，它可以与<code>break</code>、<code>continue</code>和<code>return</code>配合使用。</li>
-<li>提供了遍历所有数据结构的统一操作接口。</li>
-</ul>
-<p>下面是一个使用 break 语句，跳出<code>for...of</code>循环的例子。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> n <span class="hljs-keyword">of</span> fibonacci) &#123;<br>  <span class="hljs-keyword">if</span> (n &gt; <span class="hljs-number">1000</span>) <span class="hljs-keyword">break</span><br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(n)<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<p>上面的例子，会输出斐波纳契数列小于等于 1000 的项。如果当前项大于 1000，就会使用<code>break</code>语句跳出<code>for...of</code>循环。</p>
+                <p> 工程已经升级到了 umi4（需要安装pnpm, 然后 pnpm install），下面罗列了一些变动须知：</p>
+<h3 id="1、关于包管理器"><a href="#1、关于包管理器" class="headerlink" title="1、关于包管理器"></a>1、关于包管理器</h3><ol>
+<li>换成了 pnpm  <a target="_blank" rel="noopener" href="https://juejin.cn/post/7077918263954374670">理由</a></li>
+<li>和 npm 使用方式一致</li>
+</ol>
+<h3 id="2、关于-umijs-x2F-max"><a href="#2、关于-umijs-x2F-max" class="headerlink" title="2、关于 @umijs&#x2F;max"></a>2、关于 @umijs&#x2F;max</h3><ol>
+<li>umi 和 @umijs&#x2F;max 都是 umi，只不过 @umijs&#x2F;max 带业务需要的插件，所以需要使用 @umijs&#x2F;max</li>
+</ol>
+<h3 id="3、关于路由"><a href="#3、关于路由" class="headerlink" title="3、关于路由"></a>3、关于路由</h3><ol>
+<li>路由从 react-router-dom@5 升级到了 react-router-dom@6  <a target="_blank" rel="noopener" href="https://reactrouter.com/docs/en/v6">链接</a></li>
+</ol>
+<h3 id="4、关于-history-和-pathname-链接"><a href="#4、关于-history-和-pathname-链接" class="headerlink" title="4、关于 history 和 pathname  链接"></a>4、关于 history 和 pathname  <a target="_blank" rel="noopener" href="https://umijs.org/docs/api/api#history">链接</a></h3><ol>
+<li>umi 中的 history 是静态的，所以获取到的参数有问题。</li>
+<li>pathname&#x2F;search&#x2F;hash 通过 window 来取值</li>
+<li>采用 const navigate &#x3D; useNavigate();  <a target="_blank" rel="noopener" href="https://umijs.org/docs/api/api#usenavigate">链接</a></li>
+</ol>
+<h3 id="5、关于-query-参数（search）"><a href="#5、关于-query-参数（search）" class="headerlink" title="5、关于 query 参数（search）"></a>5、关于 query 参数（search）</h3><ol>
+<li>const params &#x3D; useParams();  <a target="_blank" rel="noopener" href="https://umijs.org/docs/api/api#useparams">链接</a></li>
+<li>createSearchParams(location.search)  <a target="_blank" rel="noopener" href="https://umijs.org/docs/api/api#createsearchparams">链接</a></li>
+</ol>
+<p><strong>UmiJS 的文档，除了「开发一个 Blog」不看，剩下的都需要过一遍  <a target="_blank" rel="noopener" href="https://umijs.org/docs/tutorials/getting-started">链接</a></strong></p>
 
                 
               </div>
@@ -378,13 +369,32 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/" class="category-chain-item">前端框架</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E9%9D%A2%E8%AF%95/">#面试</a>
-      
-        <a href="/tags/es6/">#es6</a>
+        <a href="/tags/umi/">#umi</a>
       
     </div>
   
@@ -396,8 +406,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>for...of循环和for...in循环区别</div>
-      <div>http://example.com/2022/07/09/for...of循环和for...in循环区别/</div>
+      <div>umi4升级</div>
+      <div>http://example.com/2022/08/09/升级umi4/</div>
     </div>
     <div class="license-meta">
       
@@ -409,7 +419,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年7月9日</div>
+          <div>2022年8月9日</div>
         </div>
       
       
@@ -439,18 +449,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/07/09/Object.prototype.hasOwnProperty()andObject.hasOwn()/" title="Object.prototype.hasOwnProperty()和 Object.hasOwn()">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Object.prototype.hasOwnProperty()和 Object.hasOwn()</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/07/09/git/" title="git常见命令使用">
-                        <span class="hidden-mobile">git常见命令使用</span>
+                      <a href="/2022/08/09/hello-world/" title="Hello World">
+                        <span class="hidden-mobile">Hello World</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
