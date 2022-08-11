@@ -16,24 +16,24 @@
   <meta name="author" content="高红翔">
   <meta name="keywords" content="">
   
-    <meta name="description" content="git 常见命令使用git 仓库初始化12345678echo &quot;# test&quot; &gt;&gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot;git branch -M maingit remote add origin git@github.com:xxx.gitgit pu">
+    <meta name="description" content="本期文章关于代码评审(CodeReview)那些不得不说的事儿本文作者在学习了Google Code Review 指南的基础上；总结了长期做 CodeReview 的好处：提声代码质量、提前发现问题、经验和知识的传递；CodeReview 的关注点：功能性、复杂性、代码风格、文档&amp;注释、代码亮点；还指出了 CodeReview 应该及时；以及注意的礼节，reviewer 写得好的地方也应">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git常见命令使用">
-<meta property="og:url" content="http://example.com/2022/07/09/git/index.html">
+<meta property="og:title" content="weekly 001">
+<meta property="og:url" content="http://example.com/2022/07/18/001weekly/index.html">
 <meta property="og:site_name" content="title">
-<meta property="og:description" content="git 常见命令使用git 仓库初始化12345678echo &quot;# test&quot; &gt;&gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot;git branch -M maingit remote add origin git@github.com:xxx.gitgit pu">
+<meta property="og:description" content="本期文章关于代码评审(CodeReview)那些不得不说的事儿本文作者在学习了Google Code Review 指南的基础上；总结了长期做 CodeReview 的好处：提声代码质量、提前发现问题、经验和知识的传递；CodeReview 的关注点：功能性、复杂性、代码风格、文档&amp;注释、代码亮点；还指出了 CodeReview 应该及时；以及注意的礼节，reviewer 写得好的地方也应">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-07-09T11:11:50.000Z">
-<meta property="article:modified_time" content="2022-08-11T07:37:24.658Z">
+<meta property="article:published_time" content="2022-07-18T18:00:00.000Z">
+<meta property="article:modified_time" content="2022-08-11T07:37:24.654Z">
 <meta property="article:author" content="高红翔">
-<meta property="article:tag" content="git">
+<meta property="article:tag" content="weekly">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>git常见命令使用 - title</title>
+  <title>weekly 001 - title</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -250,7 +250,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="git常见命令使用"></span>
+            <span id="subtitle" data-typed-text="weekly 001"></span>
           
         </div>
 
@@ -266,8 +266,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-07-09 11:11" pubdate>
-          2022年7月9日 上午
+        <time datetime="2022-07-18 18:00" pubdate>
+          2022年7月18日 晚上
         </time>
       </span>
     
@@ -278,7 +278,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          917 字
+          1.6k 字
         
       </span>
     
@@ -289,7 +289,7 @@
         
         
         
-          8 分钟
+          14 分钟
         
       </span>
     
@@ -335,26 +335,41 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">git常见命令使用</h1>
+            <h1 style="display: none">weekly 001</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="git-常见命令使用"><a href="#git-常见命令使用" class="headerlink" title="git 常见命令使用"></a>git 常见命令使用</h1><h2 id="git-仓库初始化"><a href="#git-仓库初始化" class="headerlink" title="git 仓库初始化"></a>git 仓库初始化</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs js">echo <span class="hljs-string">&quot;# test&quot;</span> &gt;&gt; <span class="hljs-variable constant_">README</span>.<span class="hljs-property">md</span><br>git init<br>git add <span class="hljs-variable constant_">README</span>.<span class="hljs-property">md</span><br>git commit -m <span class="hljs-string">&quot;first commit&quot;</span><br>git branch -M main<br>git remote add origin git@github.<span class="hljs-property">com</span>:xxx.<span class="hljs-property">git</span><br>git push -u origin main<br><br></code></pre></td></tr></table></figure>
-
-<h2 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a>git reset</h2><p><code>git reset</code>命令用于将当前分支指向另一个位置。</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># 将当期分支的指针倒退三个 commit，</span><br><span class="hljs-comment"># 并且会改变暂存区</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">HEAD~3</span><br><span class="hljs-comment"># 倒退指针的同时，不改变暂存区</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--soft</span> <span class="hljs-string">HEAD~3</span><br><span class="hljs-comment"># 倒退指针的同时，改变工作区</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--hard</span> <span class="hljs-string">HEAD~3</span><br></code></pre></td></tr></table></figure>
-
-<p>如果不指定回滚的位置，那么等同于撤销修改。</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># 撤销上一次向暂存区添加的所有文件</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span><br><span class="hljs-comment"># 无任何效果</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--soft</span><br><span class="hljs-comment"># 同时撤销暂存区和工作区的修改，</span><br><span class="hljs-comment"># 回复到上一次提交的状态</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--hard</span><br><span class="hljs-comment"># 撤销上一次向暂存区添加的某个指定文件，</span><br><span class="hljs-comment"># 不影响工作区中的该文件</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--</span> <span class="hljs-string">&lt;filename&gt;</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><ul>
-<li>soft: 不改变工作区和缓存区，只移动 HEAD 到指定 commit。</li>
-<li>mixed: 只改变缓存区，不改变工作区。这是默认参数，通常用于撤销<code>git add</code>。</li>
-<li>hard：改变工作区和暂存区到指定 commit。该参数等同于重置，可能会引起数据损失。<code>git reset --hard</code>等同于<code>git reset --hard HEAD</code>。</li>
-<li><code>-p</code>表示键入交互模式，指定暂存区的哪些部分需要撤销。</li>
+                <h2 id="本期文章"><a href="#本期文章" class="headerlink" title="本期文章"></a>本期文章</h2><h3 id="关于代码评审-CodeReview-那些不得不说的事儿"><a href="#关于代码评审-CodeReview-那些不得不说的事儿" class="headerlink" title="关于代码评审(CodeReview)那些不得不说的事儿"></a><a target="_blank" rel="noopener" href="https://juejin.cn/post/7100874690884796447">关于代码评审(CodeReview)那些不得不说的事儿</a></h3><p>本文作者在学习了<a target="_blank" rel="noopener" href="https://eng-practices-cn.xindoo.xyz/review/index">Google Code Review 指南</a>的基础上；总结了长期做 CodeReview 的好处：提声代码质量、提前发现问题、经验和知识的传递；CodeReview 的关注点：功能性、复杂性、代码风格、文档&amp;注释、代码亮点；还指出了 CodeReview 应该及时；以及注意的礼节，reviewer 写得好的地方也应该点赞；</p>
+<p>本文还指导大家如何才能写出对 CodeReview 友好的代码：提交前先做好自审、写清楚变更描述、单个变更竟可能短；</p>
+<p>关于 CodeReview 的误区该文也做了合理的反驳，例如 CodeReview 是纯浪费时间？工期很紧没时间去做 CodeReivew;只有高级工程师才有资格 Reivewe 别人的代码？都有测试流程了，为什么还要做 CodeReview？有了 CodeReview 就不需要测试了？只要我在团队推行了 CodeReview 流程，代码质量就会迅速提高？</p>
+<h3 id="详解-js-继承的那些事儿"><a href="#详解-js-继承的那些事儿" class="headerlink" title="详解 js 继承的那些事儿"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34574204/article/details/120716964">详解 js 继承的那些事儿</a></h3><p>本文作者带你学习 js 的继承，原型，原型链的底层知识和原理；你会了解到以下知识什么是继承；为什么要有继承；继承的相关 6 种实现方式及优缺点。</p>
+<h3 id="贪吃蛇小游戏开发思路分享"><a href="#贪吃蛇小游戏开发思路分享" class="headerlink" title="贪吃蛇小游戏开发思路分享"></a><a target="_blank" rel="noopener" href="https://juejin.cn/post/7051411538577457183">贪吃蛇小游戏开发思路分享</a></h3><p>如何用数组表示游戏地图，数组的周边嗅探，数组边界检测；还有碰撞检测。看完之后，抖音最火的游戏吃掉那个苹果就可以自己写了。</p>
+<h3 id="TypeScript-泛型中的-K、T、V-等到底是个啥？"><a href="#TypeScript-泛型中的-K、T、V-等到底是个啥？" class="headerlink" title="TypeScript 泛型中的 K、T、V 等到底是个啥？"></a><a target="_blank" rel="noopener" href="https://juejin.cn/post/7084410879223005215">TypeScript 泛型中的 K、T、V 等到底是个啥？</a></h3><p>当你首次看到 TypeScript 泛型中的 T 会感到陌生么？<br>那么 T 是什么意思呢？图中的泛型变量 T 表示 Type，实际上 T 可以用任何有效的名称代替。除了 T 之外，常见的泛型变量还有 K、V 和 E 等。</p>
+<ul>
+<li>K 全称 Key 表示对象中键的类型；</li>
+<li>V 全称 Value 表示对象中值的类型；</li>
+<li>E 全称 Element 表示元素类型。</li>
 </ul>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># Undo add</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span><br><span class="hljs-comment"># Undo a commit，不重置工作区和缓存区</span><br><span class="hljs-comment"># 回到 HEAD 之前的那个 commit</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--soft</span> <span class="hljs-string">HEAD^</span><br><span class="hljs-comment"># Undo a commit，重置工作区和缓存区</span><br><span class="hljs-comment"># 连续撤销三个 commit：HEAD, HEAD^, and HEAD~2</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--hard</span> <span class="hljs-string">HEAD~3</span><br><span class="hljs-comment"># 从暂存区移除指定文件，但不改变工作区中的该文件</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--</span> <span class="hljs-string">frotz.c</span><br></code></pre></td></tr></table></figure>
+<h3 id="45-个-GIT-经典操作场景，专治不会合代码"><a href="#45-个-GIT-经典操作场景，专治不会合代码" class="headerlink" title="45 个 GIT 经典操作场景，专治不会合代码"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/2p4m63JdsCjBpVku-WaZyA">45 个 GIT 经典操作场景，专治不会合代码</a></h3><p>本文作者整理了 45 个日常用 git 合代码的经典操作场景，基本覆盖了工作中的需求。</p>
+<ul>
+<li>读完本篇文章你会了解到以下知识：</li>
+<li>提交（Committing） 处理，如：commit message 写错了，删除任意 commit 等等；</li>
+<li>暂存（Staging）处理，如：我需要把暂存的内容添加到上一次的提交（commit）等等；</li>
+<li>分支（branches）处理：如：我想提交到一个新分支，但错误提交到了 main 等等;</li>
+<li>变基（Rebasing）和合并（Merging）处理，如：撤销 rebase&#x2F;merge，有冲突的情况等待。</li>
+</ul>
+<h3 id="Vite-3-0-发布，下一代的前端工具链"><a href="#Vite-3-0-发布，下一代的前端工具链" class="headerlink" title="Vite 3.0 发布，下一代的前端工具链"></a><a target="_blank" rel="noopener" href="https://www.oschina.net/news/202953/vite-3-0-released">Vite 3.0 发布，下一代的前端工具链</a></h3><p>Vite 3.0 现已于 2022 年 7 月 15 正式发布；Vite3.0 新特性一览；之后 vite 准备每年会发一个大版本。</p>
+<h3 id="他来了！性能吊打-Node-js-和-Deno-的新一代-javaScript-运行时！"><a href="#他来了！性能吊打-Node-js-和-Deno-的新一代-javaScript-运行时！" class="headerlink" title="他来了！性能吊打 Node.js 和 Deno 的新一代 javaScript 运行时！"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=Mzg5NDEyMzA2NQ==&mid=2247488883&idx=1&sn=1ec39e6e52849ea2deb2dbbed26cc2df&chksm=c0253825f752b13303aa204bdfa93eb5979999cf5c61224726673f552ab5406ce9a506a6e7b5#rd">他来了！性能吊打 Node.js 和 Deno 的新一代 javaScript 运行时！</a></h3><p>刚开源不到一个月就获得了 19.5k star！看起来马上就会成为 Node.js 和 Deno 的一大竞争对手了！</p>
+<p>和传统的 Node.js 这种传统的 javaScript 运行时不同，Bun.js 直接内置了打包器、转译器、任务运行器和 npm 客户端，这意味着你不再需要 Webpack&#x2F;Rollup&#x2F;esbuild&#x2F;Snowpack&#x2F;Parcel&#x2F;Rome&#x2F;swc&#x2F;babel 就可以直接运行 TypeScript、JSX！</p>
+<p>另外，Bun.js 原生支持了数百个 Node.js 和 Web API，包括约 90% 的 Node-API 函数(fs、path、Buffer 等)。</p>
+<p>Bun.js 的目标是可以在浏览器之外的其他地方运行世界上大多数 JavaScript，为你未来的基础架构带来性能和复杂性的增强，并通过更好、更简单的工具提高开发者的生产力！</p>
+<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/aliyunfe/weekly">阿里云 TXD 前端周刊</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ascoders/weekly">前端精度周刊</a></li>
+<li><a href="">o2team&#x2F;tech-weekly</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/tnfe/TNT-Weekly/">tnfe&#x2F;TNT-Weekly</a></li>
+</ul>
 
                 
               </div>
@@ -363,11 +378,32 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/weekly/" class="category-chain-item">weekly</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/git/">#git</a>
+        <a href="/tags/weekly/">#weekly</a>
       
     </div>
   
@@ -379,8 +415,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>git常见命令使用</div>
-      <div>http://example.com/2022/07/09/git/</div>
+      <div>weekly 001</div>
+      <div>http://example.com/2022/07/18/001weekly/</div>
     </div>
     <div class="license-meta">
       
@@ -392,7 +428,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年7月9日</div>
+          <div>2022年7月18日</div>
         </div>
       
       
@@ -422,9 +458,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/07/09/for...of%E5%BE%AA%E7%8E%AF%E5%92%8Cfor...in%E5%BE%AA%E7%8E%AF%E5%8C%BA%E5%88%AB/" title="for...of循环和for...in循环区别">
+                      <a href="/2022/07/25/002weekly/" title="weekly 002">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">for...of循环和for...in循环区别</span>
+                        <span class="hidden-mobile">weekly 002</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -432,8 +468,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/06/01/ahooks/" title="ahooks学习">
-                        <span class="hidden-mobile">ahooks学习</span>
+                      <a href="/2022/07/09/Object.prototype.hasOwnProperty()andObject.hasOwn()/" title="Object.prototype.hasOwnProperty()和 Object.hasOwn()">
+                        <span class="hidden-mobile">Object.prototype.hasOwnProperty()和 Object.hasOwn()</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

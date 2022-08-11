@@ -29,26 +29,100 @@
   
   
   <entry>
-    <title>Hello World</title>
-    <link href="/2022/08/09/hello-world/"/>
-    <url>/2022/08/09/hello-world/</url>
+    <title>weekly 004</title>
+    <link href="/2022/08/08/004weekly/"/>
+    <url>/2022/08/08/004weekly/</url>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="本期文章"><a href="#本期文章" class="headerlink" title="本期文章"></a>本期文章</h2><h3 id="七夕到了，还不快给你女朋友做一个专属-chrome-插件"><a href="#七夕到了，还不快给你女朋友做一个专属-chrome-插件" class="headerlink" title="七夕到了，还不快给你女朋友做一个专属 chrome 插件"></a><a href="https://juejin.cn/post/7122332008252080142">七夕到了，还不快给你女朋友做一个专属 chrome 插件</a></h3><p>七夕节马上就要到了，作为拥有对象（没有的话，可以选择 new 一个出来）的程序员来说，肯定是需要有一点表示才行的。用钱能买到的东西不一定能表达咱们的心意，但是用心去写的代码，还能让对象每天看到那才是最正确的选择。</p><p>除了手机之外，在电脑上使用浏览器搜索想要的东西是最常用的功能了，所以就需要一个打开即用的搜索框，而且还能表达心意的 chrome 标签页来让 TA 随时可用。</p><h3 id="写给前端的跨平台方案、跨端引擎的本质"><a href="#写给前端的跨平台方案、跨端引擎的本质" class="headerlink" title="写给前端的跨平台方案、跨端引擎的本质"></a><a href="https://juejin.cn/post/6966626823912308772">写给前端的跨平台方案、跨端引擎的本质</a></h3><p>近些年来，前端领域的跨端技术越来越多了：react native、weex、flutter、electron、kraken 等等。那么多跨端方案，他们有没有通用的思路？我们能不能从这么多方案中找出本质的原理？</p><p>本文会尝试探究探究以下问题：<br>什么是跨平台<br>有哪些方案是跨平台的<br>跨端和跨平台的区别是什么<br>前端领域有哪些跨端方案<br>跨平台、跨端的通用原理是什么</p><p>本文主要讲述了跨平台的概念、方案、优缺点，以及前端跨端的常见方案和原理，通过这篇文章可以理解跨端和跨平台容器的思路</p><h3 id="lerna-中文教程"><a href="#lerna-中文教程" class="headerlink" title="lerna 中文教程"></a><a href="https://juejin.cn/post/6844903856153821198?share_token=52703fb9-a8a2-4301-956a-31bb3fb19b43">lerna 中文教程</a></h3><p>Lerna 是一个工具，它优化了使用 git 和 npm 管理多包存储库的工作流。本文讲解了工作的两种模式：Fixed&#x2F;Locked mode (default)和 Independent mode；yarn 的 workspaces 模式；以及各种命令</p><p>让我们简单了解一下如何使用 lerna 来管理一个多包，以及 lerna 的主要配置和命令。</p><h3 id="Git-基础教程-必学"><a href="#Git-基础教程-必学" class="headerlink" title="Git 基础教程(必学)"></a><a href="https://mp.weixin.qq.com/s/0mGBRiG-kOa9rNL3qn9vVQ">Git 基础教程(必学)</a></h3><p>在工作中，发现不少同学对 Git 的掌握非常基础，同样作为版本控制系统，使用好 Git 比 SVN 要更有挑战，需要对 Git 有一定的了解，才能在工作中，驾驭好 Git。</p><p>本文从最简单的基础入门，讲解工作中常用的 Git 基础，掌握这些是 Git 进阶的基础，足够日常工作场景。</p><h3 id="牛逼，一款-996-代码分析工具"><a href="#牛逼，一款-996-代码分析工具" class="headerlink" title="牛逼，一款 996 代码分析工具"></a><a href="https://mp.weixin.qq.com/s?__biz=MzA3MzE4ODY0Mg==&mid=2455993889&idx=1&sn=7233d57b655d882a3e73386abba5e8ac&chksm=88850a6cbff2837a0eee062726b62415836b92c0ee5527a6c8a72993f255fa6bc1095600a5dd#rd">牛逼，一款 996 代码分析工具</a></h3><p>一个代码分析工具 code996，它可以统计 Git 项目的 commit 时间分布，进而推导出这个项目的编码工作强度。这算是一种对项目更了解的方式，杜绝 996 从了解数据开始。</p><p>code996 除了能够分析项目的实际工作强度，也能用来分析我们代码编写的情况，对自身了解自己代码编写效率的时段、最近的工作强度等都是非常好的一个输入</p><h3 id="如何优雅地在-React-中使用-TypeScript，看这一篇就够了！"><a href="#如何优雅地在-React-中使用-TypeScript，看这一篇就够了！" class="headerlink" title="如何优雅地在 React 中使用 TypeScript，看这一篇就够了！"></a><a href="https://juejin.cn/post/7021674818621669389">如何优雅地在 React 中使用 TypeScript，看这一篇就够了！</a></h3><p>本文讲解了 ypeScript 与 React 一起使用时经常遇到的一些类型定义的问题。阅读本文前，希望你能有一定的 React 和 TypeScript 基础。</p><p>你平时如何使用 ts, 鼠标点击事件对象类型是什么? 是不是用的最多的是 any 类型,最后 typescript 用成了 anyscript,typescript 也就失去了它存在的意义,本文将为你讲解如何在 react 中优雅的使用 typescript</p><h3 id="React-State-Hooks-useReducer-useState-useContext"><a href="#React-State-Hooks-useReducer-useState-useContext" class="headerlink" title="React State Hooks: useReducer, useState, useContext"></a><a href="https://www.robinwieruch.de/react-state-usereducer-usestate-usecontext/">React State Hooks: useReducer, useState, useContext</a></h3><p>作为 react 初学者，第一次弄懂了 useReducer, useState, useContext 的用法，在什么时候用，以及三者之间的区别。</p><h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><ul><li><a href="https://github.com/aliyunfe/weekly">阿里云 TXD 前端周刊</a></li><li><a href="https://github.com/ascoders/weekly">前端精度周刊</a></li><li><a href="">o2team&#x2F;tech-weekly</a></li><li><a href="https://github.com/tnfe/TNT-Weekly/">tnfe&#x2F;TNT-Weekly</a></li></ul>]]></content>
     
     
+    <categories>
+      
+      <category>weekly</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>weekly</tag>
+      
+    </tags>
     
   </entry>
   
   
   
   <entry>
-    <title>tset1</title>
-    <link href="/2022/07/11/tset1/"/>
-    <url>/2022/07/11/tset1/</url>
+    <title>weekly 003</title>
+    <link href="/2022/08/01/003weekly/"/>
+    <url>/2022/08/01/003weekly/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h2 id="本期文章"><a href="#本期文章" class="headerlink" title="本期文章"></a>本期文章</h2><h3 id="成为优秀的-TS-体操高手-之-TS-类型体操前置知识储备"><a href="#成为优秀的-TS-体操高手-之-TS-类型体操前置知识储备" class="headerlink" title="成为优秀的 TS 体操高手 之 TS 类型体操前置知识储备"></a><a href="https://mp.weixin.qq.com/s/AOzZVxftMYEOfvhSFMV_fQ">成为优秀的 TS 体操高手 之 TS 类型体操前置知识储备</a></h3><p>TS 类型体操前置知识储备大概就介绍了 extends,infer,typeof,keyof 和 in,数组的使用,as 关键字</p><p>了解了这部分关键字作用之后，完成 TS 体操练习的中等难度的题目不在话下！（起码完成 80%的题目没得问题），剩下的 20% 还需要学习更多的 TS 体操技巧</p><h3 id="尤雨溪主题演讲《2022-前端生态趋势》全记录"><a href="#尤雨溪主题演讲《2022-前端生态趋势》全记录" class="headerlink" title="尤雨溪主题演讲《2022 前端生态趋势》全记录"></a><a href="https://juejin.cn/post/7123126028838862862">尤雨溪主题演讲《2022 前端生态趋势》全记录</a></h3><p>本文是<a href="https://conf.juejin.cn/xdc2022">第二届稀土开发者大会</a> 尤大关于 《2022 Web 前端生态趋势》 的主题分享整理。</p><p>React Hooks 的推出启发了很多组件逻辑表达和逻辑附用的新范式；但是同时提到了 React Hooks 对开发者存在的心智负担问题；而类 Vue3 的基于依赖追踪的范式重新得到了重视；基于编译的响应式系统和基于编译的运行时优化才是未来。</p><p>rust、go、zig 和 JavaScript 的混合工具链会成为前端构建工具的未来。</p><p>有时间的同学可以看看<a href="https://juejin.cn/live/xdc202201">回放</a></p><p>了解 2022 前端生态趋势；关注未来，适当的调整自己的学习路线、知识体系</p><h3 id="type-与-interface-的区别，你真的懂了吗？"><a href="#type-与-interface-的区别，你真的懂了吗？" class="headerlink" title="type 与 interface 的区别，你真的懂了吗？"></a><a href="https://mp.weixin.qq.com/s/mOB95li-tuaswWliGiYZyw">type 与 interface 的区别，你真的懂了吗？</a></h3><p>在写 ts 相关代码的过程中，总能看到 interface 和 type 的身影。它们的作用好像都一样的，相同的功能用哪一个都可以实现，也都很好用，所以也很少去真正的理解它们之间到底有啥区别， 分别在什么场景下使用，本文作者将带领大家一起探索 TS 中的 interface 和 type。</p><p>interface 和 type 之间的差异不仅仅是次要语法声明。那么，今天我们就来看看这两家伙之间存在啥不可告人的秘密。</p><h3 id="深入理解-Typescript-系列-泛型"><a href="#深入理解-Typescript-系列-泛型" class="headerlink" title="深入理解 Typescript 系列-泛型"></a><a href="https://juejin.cn/post/6996479857559339038">深入理解 Typescript 系列-泛型</a></h3><p>在日常开发中，时长会考虑到方法的复用性，毕竟对于相似的场景拷贝一份代码既增加了代码量还增加了额外的维护成本，要是重构的时候忘了，还会导致不可描述的 bug。</p><p>提高方法的复用性，减少代码维护成本。</p><h3 id="Git-基础教程-必学"><a href="#Git-基础教程-必学" class="headerlink" title="Git 基础教程(必学)"></a><a href="https://mp.weixin.qq.com/s/0mGBRiG-kOa9rNL3qn9vVQ">Git 基础教程(必学)</a></h3><p>在工作中，发现不少同学对 Git 的掌握非常基础，同样作为版本控制系统，使用好 Git 比 SVN 要更有挑战，需要对 Git 有一定的了解，才能在工作中，驾驭好 Git。</p><p>本文从最简单的基础入门，讲解工作中常用的 Git 基础，掌握这些是 Git 进阶的基础，足够日常工作场景。</p><h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><ul><li><a href="https://github.com/aliyunfe/weekly">阿里云 TXD 前端周刊</a></li><li><a href="https://github.com/ascoders/weekly">前端精度周刊</a></li><li><a href="">o2team&#x2F;tech-weekly</a></li><li><a href="https://github.com/tnfe/TNT-Weekly/">tnfe&#x2F;TNT-Weekly</a></li></ul>]]></content>
     
     
+    <categories>
+      
+      <category>weekly</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>weekly</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>weekly 002</title>
+    <link href="/2022/07/25/002weekly/"/>
+    <url>/2022/07/25/002weekly/</url>
+    
+    <content type="html"><![CDATA[<h2 id="本期文章"><a href="#本期文章" class="headerlink" title="本期文章"></a>本期文章</h2><h3 id="函数式组件与类组件有何不同？"><a href="#函数式组件与类组件有何不同？" class="headerlink" title="函数式组件与类组件有何不同？"></a><a href="https://juejin.cn/post/7100874690884796447">函数式组件与类组件有何不同？</a></h3><p>详细介绍了函数组件与类组件里 props 的用法，详细介绍了函数组件在一次特定的渲染中捕获那一次渲染所用的 props 或者 state，他们总是会保持一致。在类组件中如果对 this.props 直接引用容易给自己埋坑。</p><p>当我们用函数来编写大部分的 React 代码时，我们需要调整关于优化代码和什么变量会随着时间改变的认知与直觉。</p><h3 id="一行-CSS-代码搞定响应式布局"><a href="#一行-CSS-代码搞定响应式布局" class="headerlink" title="一行 CSS 代码搞定响应式布局"></a><a href="https://mp.weixin.qq.com/s/tGm77W7t2fbLTNNxwlo_EQ">一行 CSS 代码搞定响应式布局</a></h3><p>在这篇文章中，我将教你如何使用 CSS Grid 来创建一个超酷的图像网格图，它将根据屏幕的宽度来改变列的数量。最精彩的地方在于：所有的响应特性被添加到了一行 css 代码中。这意味着我们不必将 HTML 与丑陋的类名(如 col-sm-4, col-md-8)混杂在一起，也不必为每个屏幕创建媒体查询。</p><h3 id="高性能深拷贝"><a href="#高性能深拷贝" class="headerlink" title="高性能深拷贝"></a><a href="https://juejin.cn/post/7122034570043588622">高性能深拷贝</a></h3><p>“说一下深拷贝的实现方式”, 答: “JSON.parse(JSON.stringify())、lodash 的 cloneDeep, 递归遍历…”, 相信我们大多数人在面试的过程中被问到过这个问题, 你是怎么回答的? 递归是不是你的最优解? 本文将为你介绍一种更高性能的深拷贝, 相信学完本文, 你一定能够打动面试官, 让你更轻松的斩获 offer</p><h3 id="前端如何学习更有计划性、提升更稳更快？"><a href="#前端如何学习更有计划性、提升更稳更快？" class="headerlink" title="前端如何学习更有计划性、提升更稳更快？"></a><a href="https://mp.weixin.qq.com/s?__biz=MzI2MjYzMjYwNg==&mid=2247487730&idx=1&sn=4dadced98833aa8b2f04747359dc484f&chksm=ea497503dd3efc153bd9feca2b1db4967a8ac9866335de8a8979568faeeb0ea45849367c9b68#rd">前端如何学习更有计划性、提升更稳更快？</a></h3><p>我们学习是为了自己，是为了真正的解决问题，切忌“假装学习”。虽然系统学习看起来很不错，但从自己的兴趣和工作出发，是更好的学习方向。在具体的学习中，应强调输出，以教为学，每一个困难的地方都是超车的机会，以慢为快，踏实的打牢基础知识点。</p><p>学习是一个系统，我们不能总是依赖意志力，要讲究方法、技巧、环境等，引导自己做事的兴趣、热情和成就感，这样你才会越做越起劲，最后不断地运转下去。</p><ul><li>以教促学</li><li>困难的地方就是你弯道超车的地方</li><li>以慢为快</li><li>坚定的信念</li><li>学习的“反人性”问题</li><li>即时反馈</li><li>合适的环境和氛围</li></ul><h3 id="es2022-新特性提前了解"><a href="#es2022-新特性提前了解" class="headerlink" title="es2022 新特性提前了解"></a><a href="https://juejin.cn/post/7073285958791069704">es2022 新特性提前了解</a></h3><p>新版本的 ECMA Script 将在今年六月成为标准。本文带我们看 ES2022 有什么新特性。</p><p>许多人期待 ES2022（ES13） 会带来哪些新的特性。这篇文章讲解了 es2022 新增的几个特性，一目了然，跟以前的用法有的有些不同，但是用起来更方便了。</p><h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><ul><li><a href="https://github.com/aliyunfe/weekly">阿里云 TXD 前端周刊</a></li><li><a href="https://github.com/ascoders/weekly">前端精度周刊</a></li><li><a href="">o2team&#x2F;tech-weekly</a></li><li><a href="https://github.com/tnfe/TNT-Weekly/">tnfe&#x2F;TNT-Weekly</a></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>weekly</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>weekly</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>weekly 001</title>
+    <link href="/2022/07/18/001weekly/"/>
+    <url>/2022/07/18/001weekly/</url>
+    
+    <content type="html"><![CDATA[<h2 id="本期文章"><a href="#本期文章" class="headerlink" title="本期文章"></a>本期文章</h2><h3 id="关于代码评审-CodeReview-那些不得不说的事儿"><a href="#关于代码评审-CodeReview-那些不得不说的事儿" class="headerlink" title="关于代码评审(CodeReview)那些不得不说的事儿"></a><a href="https://juejin.cn/post/7100874690884796447">关于代码评审(CodeReview)那些不得不说的事儿</a></h3><p>本文作者在学习了<a href="https://eng-practices-cn.xindoo.xyz/review/index">Google Code Review 指南</a>的基础上；总结了长期做 CodeReview 的好处：提声代码质量、提前发现问题、经验和知识的传递；CodeReview 的关注点：功能性、复杂性、代码风格、文档&amp;注释、代码亮点；还指出了 CodeReview 应该及时；以及注意的礼节，reviewer 写得好的地方也应该点赞；</p><p>本文还指导大家如何才能写出对 CodeReview 友好的代码：提交前先做好自审、写清楚变更描述、单个变更竟可能短；</p><p>关于 CodeReview 的误区该文也做了合理的反驳，例如 CodeReview 是纯浪费时间？工期很紧没时间去做 CodeReivew;只有高级工程师才有资格 Reivewe 别人的代码？都有测试流程了，为什么还要做 CodeReview？有了 CodeReview 就不需要测试了？只要我在团队推行了 CodeReview 流程，代码质量就会迅速提高？</p><h3 id="详解-js-继承的那些事儿"><a href="#详解-js-继承的那些事儿" class="headerlink" title="详解 js 继承的那些事儿"></a><a href="https://blog.csdn.net/qq_34574204/article/details/120716964">详解 js 继承的那些事儿</a></h3><p>本文作者带你学习 js 的继承，原型，原型链的底层知识和原理；你会了解到以下知识什么是继承；为什么要有继承；继承的相关 6 种实现方式及优缺点。</p><h3 id="贪吃蛇小游戏开发思路分享"><a href="#贪吃蛇小游戏开发思路分享" class="headerlink" title="贪吃蛇小游戏开发思路分享"></a><a href="https://juejin.cn/post/7051411538577457183">贪吃蛇小游戏开发思路分享</a></h3><p>如何用数组表示游戏地图，数组的周边嗅探，数组边界检测；还有碰撞检测。看完之后，抖音最火的游戏吃掉那个苹果就可以自己写了。</p><h3 id="TypeScript-泛型中的-K、T、V-等到底是个啥？"><a href="#TypeScript-泛型中的-K、T、V-等到底是个啥？" class="headerlink" title="TypeScript 泛型中的 K、T、V 等到底是个啥？"></a><a href="https://juejin.cn/post/7084410879223005215">TypeScript 泛型中的 K、T、V 等到底是个啥？</a></h3><p>当你首次看到 TypeScript 泛型中的 T 会感到陌生么？<br>那么 T 是什么意思呢？图中的泛型变量 T 表示 Type，实际上 T 可以用任何有效的名称代替。除了 T 之外，常见的泛型变量还有 K、V 和 E 等。</p><ul><li>K 全称 Key 表示对象中键的类型；</li><li>V 全称 Value 表示对象中值的类型；</li><li>E 全称 Element 表示元素类型。</li></ul><h3 id="45-个-GIT-经典操作场景，专治不会合代码"><a href="#45-个-GIT-经典操作场景，专治不会合代码" class="headerlink" title="45 个 GIT 经典操作场景，专治不会合代码"></a><a href="https://mp.weixin.qq.com/s/2p4m63JdsCjBpVku-WaZyA">45 个 GIT 经典操作场景，专治不会合代码</a></h3><p>本文作者整理了 45 个日常用 git 合代码的经典操作场景，基本覆盖了工作中的需求。</p><ul><li>读完本篇文章你会了解到以下知识：</li><li>提交（Committing） 处理，如：commit message 写错了，删除任意 commit 等等；</li><li>暂存（Staging）处理，如：我需要把暂存的内容添加到上一次的提交（commit）等等；</li><li>分支（branches）处理：如：我想提交到一个新分支，但错误提交到了 main 等等;</li><li>变基（Rebasing）和合并（Merging）处理，如：撤销 rebase&#x2F;merge，有冲突的情况等待。</li></ul><h3 id="Vite-3-0-发布，下一代的前端工具链"><a href="#Vite-3-0-发布，下一代的前端工具链" class="headerlink" title="Vite 3.0 发布，下一代的前端工具链"></a><a href="https://www.oschina.net/news/202953/vite-3-0-released">Vite 3.0 发布，下一代的前端工具链</a></h3><p>Vite 3.0 现已于 2022 年 7 月 15 正式发布；Vite3.0 新特性一览；之后 vite 准备每年会发一个大版本。</p><h3 id="他来了！性能吊打-Node-js-和-Deno-的新一代-javaScript-运行时！"><a href="#他来了！性能吊打-Node-js-和-Deno-的新一代-javaScript-运行时！" class="headerlink" title="他来了！性能吊打 Node.js 和 Deno 的新一代 javaScript 运行时！"></a><a href="https://mp.weixin.qq.com/s?__biz=Mzg5NDEyMzA2NQ==&mid=2247488883&idx=1&sn=1ec39e6e52849ea2deb2dbbed26cc2df&chksm=c0253825f752b13303aa204bdfa93eb5979999cf5c61224726673f552ab5406ce9a506a6e7b5#rd">他来了！性能吊打 Node.js 和 Deno 的新一代 javaScript 运行时！</a></h3><p>刚开源不到一个月就获得了 19.5k star！看起来马上就会成为 Node.js 和 Deno 的一大竞争对手了！</p><p>和传统的 Node.js 这种传统的 javaScript 运行时不同，Bun.js 直接内置了打包器、转译器、任务运行器和 npm 客户端，这意味着你不再需要 Webpack&#x2F;Rollup&#x2F;esbuild&#x2F;Snowpack&#x2F;Parcel&#x2F;Rome&#x2F;swc&#x2F;babel 就可以直接运行 TypeScript、JSX！</p><p>另外，Bun.js 原生支持了数百个 Node.js 和 Web API，包括约 90% 的 Node-API 函数(fs、path、Buffer 等)。</p><p>Bun.js 的目标是可以在浏览器之外的其他地方运行世界上大多数 JavaScript，为你未来的基础架构带来性能和复杂性的增强，并通过更好、更简单的工具提高开发者的生产力！</p><h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><ul><li><a href="https://github.com/aliyunfe/weekly">阿里云 TXD 前端周刊</a></li><li><a href="https://github.com/ascoders/weekly">前端精度周刊</a></li><li><a href="">o2team&#x2F;tech-weekly</a></li><li><a href="https://github.com/tnfe/TNT-Weekly/">tnfe&#x2F;TNT-Weekly</a></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>weekly</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>weekly</tag>
+      
+    </tags>
     
   </entry>
   

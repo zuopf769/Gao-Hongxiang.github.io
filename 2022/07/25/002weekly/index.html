@@ -16,24 +16,24 @@
   <meta name="author" content="高红翔">
   <meta name="keywords" content="">
   
-    <meta name="description" content="git 常见命令使用git 仓库初始化12345678echo &quot;# test&quot; &gt;&gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot;git branch -M maingit remote add origin git@github.com:xxx.gitgit pu">
+    <meta name="description" content="本期文章函数式组件与类组件有何不同？详细介绍了函数组件与类组件里 props 的用法，详细介绍了函数组件在一次特定的渲染中捕获那一次渲染所用的 props 或者 state，他们总是会保持一致。在类组件中如果对 this.props 直接引用容易给自己埋坑。 当我们用函数来编写大部分的 React 代码时，我们需要调整关于优化代码和什么变量会随着时间改变的认知与直觉。 一行 CSS 代码搞定响应式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git常见命令使用">
-<meta property="og:url" content="http://example.com/2022/07/09/git/index.html">
+<meta property="og:title" content="weekly 002">
+<meta property="og:url" content="http://example.com/2022/07/25/002weekly/index.html">
 <meta property="og:site_name" content="title">
-<meta property="og:description" content="git 常见命令使用git 仓库初始化12345678echo &quot;# test&quot; &gt;&gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot;git branch -M maingit remote add origin git@github.com:xxx.gitgit pu">
+<meta property="og:description" content="本期文章函数式组件与类组件有何不同？详细介绍了函数组件与类组件里 props 的用法，详细介绍了函数组件在一次特定的渲染中捕获那一次渲染所用的 props 或者 state，他们总是会保持一致。在类组件中如果对 this.props 直接引用容易给自己埋坑。 当我们用函数来编写大部分的 React 代码时，我们需要调整关于优化代码和什么变量会随着时间改变的认知与直觉。 一行 CSS 代码搞定响应式">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-07-09T11:11:50.000Z">
-<meta property="article:modified_time" content="2022-08-11T07:37:24.658Z">
+<meta property="article:published_time" content="2022-07-25T18:00:00.000Z">
+<meta property="article:modified_time" content="2022-08-11T07:37:24.654Z">
 <meta property="article:author" content="高红翔">
-<meta property="article:tag" content="git">
+<meta property="article:tag" content="weekly">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>git常见命令使用 - title</title>
+  <title>weekly 002 - title</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -250,7 +250,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="git常见命令使用"></span>
+            <span id="subtitle" data-typed-text="weekly 002"></span>
           
         </div>
 
@@ -266,8 +266,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-07-09 11:11" pubdate>
-          2022年7月9日 上午
+        <time datetime="2022-07-25 18:00" pubdate>
+          2022年7月25日 晚上
         </time>
       </span>
     
@@ -278,7 +278,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          917 字
+          952 字
         
       </span>
     
@@ -335,26 +335,34 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">git常见命令使用</h1>
+            <h1 style="display: none">weekly 002</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="git-常见命令使用"><a href="#git-常见命令使用" class="headerlink" title="git 常见命令使用"></a>git 常见命令使用</h1><h2 id="git-仓库初始化"><a href="#git-仓库初始化" class="headerlink" title="git 仓库初始化"></a>git 仓库初始化</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs js">echo <span class="hljs-string">&quot;# test&quot;</span> &gt;&gt; <span class="hljs-variable constant_">README</span>.<span class="hljs-property">md</span><br>git init<br>git add <span class="hljs-variable constant_">README</span>.<span class="hljs-property">md</span><br>git commit -m <span class="hljs-string">&quot;first commit&quot;</span><br>git branch -M main<br>git remote add origin git@github.<span class="hljs-property">com</span>:xxx.<span class="hljs-property">git</span><br>git push -u origin main<br><br></code></pre></td></tr></table></figure>
-
-<h2 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a>git reset</h2><p><code>git reset</code>命令用于将当前分支指向另一个位置。</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># 将当期分支的指针倒退三个 commit，</span><br><span class="hljs-comment"># 并且会改变暂存区</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">HEAD~3</span><br><span class="hljs-comment"># 倒退指针的同时，不改变暂存区</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--soft</span> <span class="hljs-string">HEAD~3</span><br><span class="hljs-comment"># 倒退指针的同时，改变工作区</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--hard</span> <span class="hljs-string">HEAD~3</span><br></code></pre></td></tr></table></figure>
-
-<p>如果不指定回滚的位置，那么等同于撤销修改。</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># 撤销上一次向暂存区添加的所有文件</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span><br><span class="hljs-comment"># 无任何效果</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--soft</span><br><span class="hljs-comment"># 同时撤销暂存区和工作区的修改，</span><br><span class="hljs-comment"># 回复到上一次提交的状态</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--hard</span><br><span class="hljs-comment"># 撤销上一次向暂存区添加的某个指定文件，</span><br><span class="hljs-comment"># 不影响工作区中的该文件</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--</span> <span class="hljs-string">&lt;filename&gt;</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><ul>
-<li>soft: 不改变工作区和缓存区，只移动 HEAD 到指定 commit。</li>
-<li>mixed: 只改变缓存区，不改变工作区。这是默认参数，通常用于撤销<code>git add</code>。</li>
-<li>hard：改变工作区和暂存区到指定 commit。该参数等同于重置，可能会引起数据损失。<code>git reset --hard</code>等同于<code>git reset --hard HEAD</code>。</li>
-<li><code>-p</code>表示键入交互模式，指定暂存区的哪些部分需要撤销。</li>
+                <h2 id="本期文章"><a href="#本期文章" class="headerlink" title="本期文章"></a>本期文章</h2><h3 id="函数式组件与类组件有何不同？"><a href="#函数式组件与类组件有何不同？" class="headerlink" title="函数式组件与类组件有何不同？"></a><a target="_blank" rel="noopener" href="https://juejin.cn/post/7100874690884796447">函数式组件与类组件有何不同？</a></h3><p>详细介绍了函数组件与类组件里 props 的用法，详细介绍了函数组件在一次特定的渲染中捕获那一次渲染所用的 props 或者 state，他们总是会保持一致。在类组件中如果对 this.props 直接引用容易给自己埋坑。</p>
+<p>当我们用函数来编写大部分的 React 代码时，我们需要调整关于优化代码和什么变量会随着时间改变的认知与直觉。</p>
+<h3 id="一行-CSS-代码搞定响应式布局"><a href="#一行-CSS-代码搞定响应式布局" class="headerlink" title="一行 CSS 代码搞定响应式布局"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/tGm77W7t2fbLTNNxwlo_EQ">一行 CSS 代码搞定响应式布局</a></h3><p>在这篇文章中，我将教你如何使用 CSS Grid 来创建一个超酷的图像网格图，它将根据屏幕的宽度来改变列的数量。最精彩的地方在于：所有的响应特性被添加到了一行 css 代码中。这意味着我们不必将 HTML 与丑陋的类名(如 col-sm-4, col-md-8)混杂在一起，也不必为每个屏幕创建媒体查询。</p>
+<h3 id="高性能深拷贝"><a href="#高性能深拷贝" class="headerlink" title="高性能深拷贝"></a><a target="_blank" rel="noopener" href="https://juejin.cn/post/7122034570043588622">高性能深拷贝</a></h3><p>“说一下深拷贝的实现方式”, 答: “JSON.parse(JSON.stringify())、lodash 的 cloneDeep, 递归遍历…”, 相信我们大多数人在面试的过程中被问到过这个问题, 你是怎么回答的? 递归是不是你的最优解? 本文将为你介绍一种更高性能的深拷贝, 相信学完本文, 你一定能够打动面试官, 让你更轻松的斩获 offer</p>
+<h3 id="前端如何学习更有计划性、提升更稳更快？"><a href="#前端如何学习更有计划性、提升更稳更快？" class="headerlink" title="前端如何学习更有计划性、提升更稳更快？"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzI2MjYzMjYwNg==&mid=2247487730&idx=1&sn=4dadced98833aa8b2f04747359dc484f&chksm=ea497503dd3efc153bd9feca2b1db4967a8ac9866335de8a8979568faeeb0ea45849367c9b68#rd">前端如何学习更有计划性、提升更稳更快？</a></h3><p>我们学习是为了自己，是为了真正的解决问题，切忌“假装学习”。虽然系统学习看起来很不错，但从自己的兴趣和工作出发，是更好的学习方向。在具体的学习中，应强调输出，以教为学，每一个困难的地方都是超车的机会，以慢为快，踏实的打牢基础知识点。</p>
+<p>学习是一个系统，我们不能总是依赖意志力，要讲究方法、技巧、环境等，引导自己做事的兴趣、热情和成就感，这样你才会越做越起劲，最后不断地运转下去。</p>
+<ul>
+<li>以教促学</li>
+<li>困难的地方就是你弯道超车的地方</li>
+<li>以慢为快</li>
+<li>坚定的信念</li>
+<li>学习的“反人性”问题</li>
+<li>即时反馈</li>
+<li>合适的环境和氛围</li>
 </ul>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># Undo add</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span><br><span class="hljs-comment"># Undo a commit，不重置工作区和缓存区</span><br><span class="hljs-comment"># 回到 HEAD 之前的那个 commit</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--soft</span> <span class="hljs-string">HEAD^</span><br><span class="hljs-comment"># Undo a commit，重置工作区和缓存区</span><br><span class="hljs-comment"># 连续撤销三个 commit：HEAD, HEAD^, and HEAD~2</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--hard</span> <span class="hljs-string">HEAD~3</span><br><span class="hljs-comment"># 从暂存区移除指定文件，但不改变工作区中的该文件</span><br><span class="hljs-string">$</span> <span class="hljs-string">git</span> <span class="hljs-string">reset</span> <span class="hljs-string">--</span> <span class="hljs-string">frotz.c</span><br></code></pre></td></tr></table></figure>
+<h3 id="es2022-新特性提前了解"><a href="#es2022-新特性提前了解" class="headerlink" title="es2022 新特性提前了解"></a><a target="_blank" rel="noopener" href="https://juejin.cn/post/7073285958791069704">es2022 新特性提前了解</a></h3><p>新版本的 ECMA Script 将在今年六月成为标准。本文带我们看 ES2022 有什么新特性。</p>
+<p>许多人期待 ES2022（ES13） 会带来哪些新的特性。这篇文章讲解了 es2022 新增的几个特性，一目了然，跟以前的用法有的有些不同，但是用起来更方便了。</p>
+<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/aliyunfe/weekly">阿里云 TXD 前端周刊</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ascoders/weekly">前端精度周刊</a></li>
+<li><a href="">o2team&#x2F;tech-weekly</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/tnfe/TNT-Weekly/">tnfe&#x2F;TNT-Weekly</a></li>
+</ul>
 
                 
               </div>
@@ -363,11 +371,32 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/weekly/" class="category-chain-item">weekly</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/git/">#git</a>
+        <a href="/tags/weekly/">#weekly</a>
       
     </div>
   
@@ -379,8 +408,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>git常见命令使用</div>
-      <div>http://example.com/2022/07/09/git/</div>
+      <div>weekly 002</div>
+      <div>http://example.com/2022/07/25/002weekly/</div>
     </div>
     <div class="license-meta">
       
@@ -392,7 +421,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年7月9日</div>
+          <div>2022年7月25日</div>
         </div>
       
       
@@ -422,9 +451,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/07/09/for...of%E5%BE%AA%E7%8E%AF%E5%92%8Cfor...in%E5%BE%AA%E7%8E%AF%E5%8C%BA%E5%88%AB/" title="for...of循环和for...in循环区别">
+                      <a href="/2022/08/01/003weekly/" title="weekly 003">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">for...of循环和for...in循环区别</span>
+                        <span class="hidden-mobile">weekly 003</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -432,8 +461,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/06/01/ahooks/" title="ahooks学习">
-                        <span class="hidden-mobile">ahooks学习</span>
+                      <a href="/2022/07/18/001weekly/" title="weekly 001">
+                        <span class="hidden-mobile">weekly 001</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
