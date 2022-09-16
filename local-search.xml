@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>文化建设</title>
+    <link href="/2022/09/16/005%E6%96%87%E5%8C%96/"/>
+    <url>/2022/09/16/005%E6%96%87%E5%8C%96/</url>
+    
+    <content type="html"><![CDATA[<h3 id="公司文化："><a href="#公司文化：" class="headerlink" title="公司文化："></a>公司文化：</h3><ol><li>Open minded and cooperative - 开放合作，虚心自省</li><li>Simple and direct communication - 不甩锅，不抱怨</li><li>Always seek for truth - 基于事实，追求真理</li><li>Always keep learning, stay humble - 保持学习，保持敬畏</li><li>Mars view - Global team - 火星视角</li></ol><h3 id="团队文化"><a href="#团队文化" class="headerlink" title="团队文化"></a>团队文化</h3><ul><li>自驱协作；</li><li>学习进取；</li><li>积极主动；</li><li>承担责任；</li><li>成就他人；</li><li>往前一步，站在对方立场思考问题；</li><li>拥抱变化、勇于挑战、打破边界（能力、认知），有全局意识！</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>文化建设</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>文化建设</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>node 工具使用</title>
     <link href="/2022/08/17/node/"/>
     <url>/2022/08/17/node/</url>
@@ -149,8 +174,8 @@
   
   <entry>
     <title>Object.prototype.hasOwnProperty()和 Object.hasOwn()</title>
-    <link href="/2022/07/09/Object.prototype.hasOwnProperty()andObject.hasOwn()/"/>
-    <url>/2022/07/09/Object.prototype.hasOwnProperty()andObject.hasOwn()/</url>
+    <link href="/2022/07/09/Object.prototype.hasOwnProperty()andObject.hasOwn()%20copy/"/>
+    <url>/2022/07/09/Object.prototype.hasOwnProperty()andObject.hasOwn()%20copy/</url>
     
     <content type="html"><![CDATA[<h1 id="Object-prototype-hasOwnProperty-和-Object-hasOwn"><a href="#Object-prototype-hasOwnProperty-和-Object-hasOwn" class="headerlink" title="Object.prototype.hasOwnProperty()和 Object.hasOwn()"></a>Object.prototype.hasOwnProperty()和 Object.hasOwn()</h1><h3 id="Object-prototype-hasOwnProperty"><a href="#Object-prototype-hasOwnProperty" class="headerlink" title="Object.prototype.hasOwnProperty()"></a><code>Object.prototype.hasOwnProperty()</code></h3><p><code>hasOwnProperty()</code> 方法会返回一个布尔值，指示对象自身属性中是否具有指定的属性（也就是，是否有指定的键）。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> object1 = &#123;&#125;<br>object1.<span class="hljs-property">property1</span> = <span class="hljs-number">42</span><br><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(object1.<span class="hljs-title function_">hasOwnProperty</span>(<span class="hljs-string">&quot;property1&quot;</span>))<br><span class="hljs-comment">// expected output: true</span><br><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(object1.<span class="hljs-title function_">hasOwnProperty</span>(<span class="hljs-string">&quot;toString&quot;</span>))<br><span class="hljs-comment">// expected output: false</span><br><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(object1.<span class="hljs-title function_">hasOwnProperty</span>(<span class="hljs-string">&quot;hasOwnProperty&quot;</span>))<br><span class="hljs-comment">// expected output: false</span><br></code></pre></td></tr></table></figure><h3 id="Object-hasOwn"><a href="#Object-hasOwn" class="headerlink" title="Object.hasOwn()"></a><code>Object.hasOwn()</code></h3><blockquote><p><strong>注意：</strong> <code>Object.hasOwn()</code>旨在替代<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty"><code>Object.hasOwnProperty()</code></a>.</p></blockquote><h4 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h4><p><code>hasOwn(instance, prop)</code></p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> object1 = &#123;<br>  <span class="hljs-attr">prop</span>: <span class="hljs-string">&quot;exists&quot;</span>,<br>&#125;<br><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Object</span>.<span class="hljs-title function_">hasOwn</span>(object1, <span class="hljs-string">&quot;prop&quot;</span>))<br><span class="hljs-comment">// expected output: true</span><br><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Object</span>.<span class="hljs-title function_">hasOwn</span>(object1, <span class="hljs-string">&quot;toString&quot;</span>))<br><span class="hljs-comment">// expected output: false</span><br><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Object</span>.<span class="hljs-title function_">hasOwn</span>(object1, <span class="hljs-string">&quot;undeclaredPropertyValue&quot;</span>))<br><span class="hljs-comment">// expected output: false</span><br></code></pre></td></tr></table></figure><h4 id="hasOwn和-in-的区别"><a href="#hasOwn和-in-的区别" class="headerlink" title="hasOwn和 in 的区别"></a><code>hasOwn</code>和 in 的区别</h4><blockquote><p>以下示例区分直接属性和通过原型链继承的属性：</p></blockquote><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> example = &#123;&#125;<br>example.<span class="hljs-property">prop</span> = <span class="hljs-string">&quot;exists&quot;</span><br><br><span class="hljs-comment">// `hasOwn` will only return true for direct properties:</span><br><span class="hljs-title class_">Object</span>.<span class="hljs-title function_">hasOwn</span>(example, <span class="hljs-string">&quot;prop&quot;</span>) <span class="hljs-comment">// returns true</span><br><span class="hljs-title class_">Object</span>.<span class="hljs-title function_">hasOwn</span>(example, <span class="hljs-string">&quot;toString&quot;</span>) <span class="hljs-comment">// returns false</span><br><span class="hljs-title class_">Object</span>.<span class="hljs-title function_">hasOwn</span>(example, <span class="hljs-string">&quot;hasOwnProperty&quot;</span>) <span class="hljs-comment">// returns false</span><br><br><span class="hljs-comment">// The `in` operator will return true for direct or inherited properties:</span><br><span class="hljs-string">&quot;prop&quot;</span> <span class="hljs-keyword">in</span> example <span class="hljs-comment">// returns true</span><br><span class="hljs-string">&quot;toString&quot;</span> <span class="hljs-keyword">in</span> example <span class="hljs-comment">// returns true</span><br><span class="hljs-string">&quot;hasOwnProperty&quot;</span> <span class="hljs-keyword">in</span> example <span class="hljs-comment">// returns true</span><br></code></pre></td></tr></table></figure><h3 id="hasOwnProperty-存在的问题"><a href="#hasOwnProperty-存在的问题" class="headerlink" title="hasOwnProperty 存在的问题"></a><code>hasOwnProperty</code> 存在的问题</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> foo = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(<span class="hljs-literal">null</span>);<br>foo.<span class="hljs-property">prop</span> = <span class="hljs-string">&#x27;exists&#x27;</span>;<br><span class="hljs-keyword">if</span> (<span class="hljs-title class_">Object</span>.<span class="hljs-title function_">hasOwn</span>(foo, <span class="hljs-string">&#x27;prop&#x27;</span>)) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(foo.<span class="hljs-property">prop</span>); <span class="hljs-comment">//true - 与该对象怎么创建的没关系</span><br><span class="hljs-keyword">if</span> (foo.<span class="hljs-title function_">hasOwnProperty</span>(<span class="hljs-string">&#x27;prop&#x27;</span>)) &#123;<span class="hljs-comment">//  TypeError: foo.hasOwnProperty is not a function</span><br>   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(foo.<span class="hljs-property">prop</span>);<br>&#125;<br></code></pre></td></tr></table></figure><blockquote><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create"><code>Object.create(null)</code></a>. 这些不继承自<code>Object.prototype</code>，因此<code>hasOwnProperty()</code>无法访问。</p></blockquote>]]></content>
     
@@ -233,6 +258,25 @@
     <content type="html"><![CDATA[<h2 id="前端框架"><a href="#前端框架" class="headerlink" title="前端框架"></a>前端框架</h2><h3 id="git-使用"><a href="#git-使用" class="headerlink" title="git 使用"></a>git 使用</h3><ul><li><a href="https://www.bookstack.cn/read/git-tutorial/docs-commands-git-reset.md">阮一峰 Git 教程</a></li><li><a href="https://mp.weixin.qq.com/s/2p4m63JdsCjBpVku-WaZyA">45 个 GIT 经典操作场景，专治不会合代码</a></li><li></li></ul><h3 id="es6-使用"><a href="#es6-使用" class="headerlink" title="es6 使用"></a>es6 使用</h3><ul><li><a href="https://es6.ruanyifeng.com/">ES6 入门教程</a></li></ul>]]></content>
     
     
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>rtd样式</title>
+    <link href="/2022/03/01/%E5%B7%A5%E4%BD%9C/"/>
+    <url>/2022/03/01/%E5%B7%A5%E4%BD%9C/</url>
+    
+    <content type="html"><![CDATA[<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>（二）公积金缴存比例是多少？</p><p>公积金缴存比例5%-12%，由单位选择。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>工作</tag>
+      
+    </tags>
     
   </entry>
   
