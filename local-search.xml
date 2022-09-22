@@ -29,6 +29,31 @@
   
   
   <entry>
+    <title>连续数组</title>
+    <link href="/2022/09/16/006%E8%BF%9E%E7%BB%AD%E6%95%B0%E7%BB%84/"/>
+    <url>/2022/09/16/006%E8%BF%9E%E7%BB%AD%E6%95%B0%E7%BB%84/</url>
+    
+    <content type="html"><![CDATA[<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><blockquote><p>给定一个二进制数组 nums , 找到含有相同数量的 0 和 1 的最长连续子数组，并返回该子数组的长度。</p><p>示例 1:</p><p>输入: nums &#x3D; [0,1]</p><p>输出: 2</p><p>说明: [0, 1] 是具有相同数量 0 和 1 的最长连续子数组。</p><p>示例 2:</p><p>输入: nums &#x3D; [0,1,0]</p><p>输出: 2</p><p>说明: [0, 1] (或 [1, 0]) 是具有相同数量 0 和 1 的最长连续子数组。</p><p>var findMaxLength &#x3D; function(nums) {</p><p>&#x2F;&#x2F; TODO</p><p>};</p></blockquote><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><blockquote><p>&#x2F;&#x2F; 前缀和+哈希表<br>&#x2F;&#x2F; 由于「0 和 1 的数量相同」等价于「1 的数量减去 0 的数量等于 0」，我们可以将数组中的 0 视作 −1，则原问题转换成「求最长的连续子数组，其元素和为 0」。</p><p>&#x2F;&#x2F; 由于哈希表存储的是 counter 的每个取值第一次出现的下标，因此当遇到重复的前缀和时，根据当前下标和哈希表中存储的下标计算得到的子数组长度是以当前下标结尾的子数组中满足有相同数量的 0 和 1 的最长子数组的长度。遍历结束时，即可得到 nums 中的有相同数量的 0 和 1 的最长子数组的长度。</p></blockquote><h3 id="参考答案"><a href="#参考答案" class="headerlink" title="参考答案"></a>参考答案</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">var</span> findMaxLength = <span class="hljs-keyword">function</span> (<span class="hljs-params">nums</span>) &#123;<br>  <span class="hljs-keyword">let</span> maxLength = <span class="hljs-number">0</span><br>  <span class="hljs-keyword">const</span> map = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>()<br>  <span class="hljs-keyword">let</span> counter = <span class="hljs-number">0</span> <span class="hljs-comment">////存储newNums的前缀和即可</span><br>  map.<span class="hljs-title function_">set</span>(counter, -<span class="hljs-number">1</span>) <span class="hljs-comment">//合为key，索引为value,初始化索引为-1，和为0</span><br>  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; nums.<span class="hljs-property">length</span>; i++) &#123;<br>    <span class="hljs-keyword">if</span> (nums[i] === <span class="hljs-number">1</span>) &#123;<br>      counter++<br>    &#125; <span class="hljs-keyword">else</span> &#123;<br>      counter--<br>    &#125;<br>    <span class="hljs-keyword">if</span> (map.<span class="hljs-title function_">has</span>(counter)) &#123;<br>      maxLength = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(maxLength, i - map.<span class="hljs-title function_">get</span>(counter))<br>    &#125; <span class="hljs-keyword">else</span> &#123;<br>      map.<span class="hljs-title function_">set</span>(counter, i)<br>    &#125;<br>  &#125;<br>  <span class="hljs-keyword">return</span> maxLength<br>&#125;<br><span class="hljs-keyword">const</span> arr1 = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>]<br><span class="hljs-keyword">const</span> arr2 = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>]<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">findMaxLength</span>(arr1))<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">findMaxLength</span>(arr2))<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>算法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>算法</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>node 工具使用</title>
     <link href="/2022/08/17/node/"/>
     <url>/2022/08/17/node/</url>
